@@ -1,0 +1,12 @@
+{
+  "name": "trabalho-jairo-fim",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --experimental-modules my-app.mjs"
+  },
+  "keywords": [],
+  "author": "Maxwell Souza <maxwellsouzacarvalho@gmail.com> (https://github.com/maxjf1)",
+  "license": "ISC"
+}
