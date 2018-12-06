@@ -88,11 +88,17 @@ function sanitize(text) {
 }
 
 async function main() {
+    console.log(`Reading '${file}' ...`)
     let content = await readFile(file)
+    console.log('done!')
+    console.log('Parsing file')
     content = sanitize(content)
     // console.log(content)
     // console.log('OK')
+    console.log('done!')
+    console.log(`Writing output in '${output}'...`)
     await writeFile(output, content)
+    console.log('done!')
 }
 
 main();

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node --experimental-modules my-app.mjs"
+    "start": "node --experimental-modules index.mjs"
   },
   "keywords": [],
   "author": "Maxwell Souza <maxwellsouzacarvalho@gmail.com> (https://github.com/maxjf1)",
