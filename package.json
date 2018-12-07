@@ -1,12 +1,16 @@
 {
   "name": "trabalho-jairo-fim",
   "version": "1.0.0",
-  "description": "",
+  "description": "Language model project using SIRLM and NodeJS",
   "main": "index.js",
   "scripts": {
     "start": "node --experimental-modules index.mjs"
   },
   "keywords": [],
   "author": "Maxwell Souza <maxwellsouzacarvalho@gmail.com> (https://github.com/maxjf1)",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^10.12.12"
+  },
+  "dependencies": {}
 }
