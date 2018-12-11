@@ -62,7 +62,12 @@ function sanitize(line) {
         newLines.push(c.trim())
         line = a.trim() + ' ' + b.trim()
     }
-    line = [line, ...newLines].filter(v => v && v.split(' ').length > 1).join("\n").trim()
+    line = [line, ...newLines]
+        .filter(v => v && v.split(' ').length > 1)
+        .join("\n")
+        .trim()
+        .replace(/[~`!@#$%^&*(){}\[\];:"'<,.>?\/\\|_+=-]/g, '')
+
     return line
 }
 
@@ -81,7 +86,7 @@ async function main() {
     const begin = new Date()
 
     let readLines = 0
-    
+
     lineReader.on('line', line => {
         let parsedLine = sanitize(line)
         if (!parsedLine)
